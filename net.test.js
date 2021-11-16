@@ -19,11 +19,11 @@ describe("Netology.ru tests", () => {
   });
 
   test.skip("Successful booking 1 ticket", async () => {
-    await clickElement(page, ".page-nav > a:nth-child(3)"); //choose day
-    await clickElement(page, "a.movie-seances__time"); //choose time
-    await clickElement(page, ".buying-scheme__row > span:nth-child(3)"); //choose chair
-    await clickElement(page, "button.acceptin-button"); //click booking
-    await clickElement(page, "button.acceptin-button"); //click for qr!
+    await clickElement(page, ".page-nav > a:nth-child(3)");
+    await clickElement(page, "a.movie-seances__time");
+    await clickElement(page, ".buying-scheme__row > span:nth-child(3)");
+    await clickElement(page, "button.acceptin-button");
+    await clickElement(page, "button.acceptin-button");
     const actual = await getText(page, "p.ticket__hint");
     expect(actual).toContain(
       "Покажите QR-код нашему контроллеру для подтверждения бронирования."
