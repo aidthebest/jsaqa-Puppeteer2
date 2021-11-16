@@ -18,7 +18,7 @@ describe("Netology.ru tests", () => {
     await page.goto("http://qamid.tmweb.ru/client/index.php");
   });
 
-  test.skip("Successful booking 1 ticket", async () => {
+  test("Successful booking 1 ticket", async () => {
     await clickElement(page, ".page-nav > a:nth-child(3)");
     await clickElement(page, "a.movie-seances__time");
     await clickElement(page, ".buying-scheme__row > span:nth-child(3)");
@@ -30,7 +30,7 @@ describe("Netology.ru tests", () => {
     );
   });
 
-  test.skip("Successful booking 2 tickets", async () => {
+  test("Successful booking 2 tickets", async () => {
     await clickElement(page, ".page-nav > a:nth-child(3)");
     await clickElement(page, "a.movie-seances__time");
     await clickElement(page, ".buying-scheme__row > span:nth-child(7)");
