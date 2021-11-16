@@ -19,7 +19,7 @@ After(async function () {
 
 Given("user is on {string} page", async function (string) {
   return await this.page.goto(`${string}`, {
-    setTimeout: 20000,
+    setTimeout: 50000,
   });
 });
 
@@ -47,7 +47,7 @@ When("user sees the qr text first time {string}", async function (string) {
 
 When("user go on {string} page", async function (string) {
   return await this.page.goto(`${string}`, {
-    setTimeout: 20000,
+    setTimeout: 50000,
   });
 });
 
