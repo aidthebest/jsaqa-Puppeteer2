@@ -24,19 +24,19 @@ Given("user is on {string} page", async function (string) {
 });
 
 When("user choose day {string}", async function (string) {
-  await clickElement(this.page, `${string}`); //choose day
+  await clickElement(this.page, `${string}`); 
 });
 When("user choose time {string}", async function (string) {
-  await clickElement(this.page, `${string}`); //choose time
+  await clickElement(this.page, `${string}`); 
 });
 When("user choose chair {string}", async function (string) {
-  await clickElement(this.page, `${string}`); //choose chair
-});
+  await clickElement(this.page, `${string}`); 
+  
 When("user click booking {string}", async function (string) {
-  await clickElement(this.page, `${string}`); //click booking
+  await clickElement(this.page, `${string}`); 
 });
 When("user click for qr! {string}", async function (string) {
-  await clickElement(this.page, `${string}`); //click for qr!
+  await clickElement(this.page, `${string}`); 
 });
 
 When("user sees the qr text first time {string}", async function (string) {

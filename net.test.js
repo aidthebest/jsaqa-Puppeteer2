@@ -34,7 +34,7 @@ describe("Netology.ru tests", () => {
     await clickElement(page, ".page-nav > a:nth-child(3)");
     await clickElement(page, "a.movie-seances__time");
     await clickElement(page, ".buying-scheme__row > span:nth-child(4)");
-    await clickElement(page, ".buying-scheme__row > span:nth-child(12)");
+    await clickElement(page, ".buying-scheme__row > span:nth-child(9)");
     await clickElement(page, "button.acceptin-button");
     await clickElement(page, "button.acceptin-button");
     const actual = await getText(page, "p.ticket__hint");
